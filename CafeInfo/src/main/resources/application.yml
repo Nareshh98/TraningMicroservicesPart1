@@ -1,0 +1,21 @@
+
+##application.properties and application.yml are similar
+## if we wan to create sub property we have to give two Spaces
+server:
+  port: 8000
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+## it will create tables every time
+  datasource:
+    url: jdbc:h2:mem:devendra
+    username: root
+    password: root
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+      path: /h2   
+      ## it willunable h2 database and  path is url   
+
